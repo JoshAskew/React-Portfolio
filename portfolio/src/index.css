@@ -1,17 +1,30 @@
-/* src/index.css */
+:root {
+  --grey1: #f8f9fa;
+  --grey2: #e9ecef;
+  --grey3: #dee2e6;
+  --grey4: #ced4da;
+  --grey5: #adb5bd;
+  --grey6: #6c757d;
+  --grey7: #495057;
+  --grey8: #343a40;
+  --grey9: #212529;
+
+
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color:var(--grey1);
   }
   
   header, footer {
     padding: 20px;
     background-color: #333;
-    color: #fff;
+    color: var(--grey1);
     text-align: center;
   }
+
   
   main {
     padding: 20px;
@@ -29,13 +42,80 @@ body {
   
   nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--grey4);
+    font-size: 20px;
   }
   
-  nav ul li a.active {
-    text-decoration: underline;
-  }
   
   footer a {
-    color: #fff;
+    color: var(--grey1);
+  }
+  
+  footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .am-h2-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  
+ 
+  .active {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+  }
+
+  .prof-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
+  .propic {
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px var(--grey6);
+  }
+
+  .resume-header {
+    text-align: center;
+  }
+
+  .about-p {
+    padding-top: 30px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .message-input {
+    width: 400px;
+    height: 100px;
+  }
+
+  form {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .contact-name, .contact-email, .contact-message {
+    padding: 20px;
+  }
+
+  .contact-header {
+    text-align: center;
+  }
+
+  #nav-links {
+    padding: 30px;
+  }
+
+  .my-name {
+    padding-bottom: 20px;
+    font-weight: 600;
   }

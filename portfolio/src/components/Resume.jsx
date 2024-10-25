@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
 
 function Resume() {
   return (
@@ -6,7 +7,10 @@ function Resume() {
       <h2 className='resume-header'>Resume</h2>
       <a href="https://docs.google.com/document/d/14s2cUop3L5g-py8BYRwTCmaHQApOyHOXYMxclbPxWZ0/edit?usp=sharing" download>Download Resume</a>
       <h3>Proficiencies</h3>
-      <h5>Front End</h5>
+
+      <Card style={{ width: '26rem', maxHeight: '50px;' }} className="mb-4">
+      <Card.Body>
+      <h5 className='prof-h5'>Front End</h5>
       <ul>
         <li>CSS</li>
         <li>HTML</li>
@@ -15,20 +19,35 @@ function Resume() {
         <li>TypeScript</li>
         <li>Bootstrap</li>
         <li>RESTful APIs</li>
+        <li>NodeJS</li>
       </ul>
-      <h5>Back End</h5>
+      </Card.Body>
+    </Card>
+
+    <Card style={{ width: '26rem', maxHeight: '50px;' }} className="mb-4">
+      <Card.Body>
+      <h5 className='prof-h5'>Back End</h5>
       <ul>
         <li>JavaScript</li>
         <li>postgresSQL</li>
         <li>SQL Databases</li>
         <li>Express.js</li>
         <li>RESTful APIs</li>
+        <li>NodeJS</li>
         <li>Insomnia</li>
       </ul>
-      <h5>IDEs</h5>
+      </Card.Body>
+    </Card>
+
+    <Card style={{ width: '26rem', maxHeight: '50px;' }} className="mb-4">
+    <Card.Body>
+      <h5 className='prof-h5'>IDEs & Version control</h5>
+      <ul>
       <li>Visual Studio Code</li>
-      <h5>Version Control</h5>
       <li>Git</li>
+      </ul>
+      </Card.Body>
+      </Card>
     </section>
   );
 }

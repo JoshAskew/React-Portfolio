@@ -1,4 +1,12 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import user from '../images/user.png';
+import email from '../images/email.png';
+import message from '../images/message.png'
+
 
 function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -22,11 +30,11 @@ function Contact() {
     // Error handling for empty inputs
     if (!value) {
       setErrors((prevErrors) => ({ ...prevErrors, [name]: `${name} is required` }));
-    } 
+    }
     // Email validation error
     else if (name === 'email' && !validateEmail(value)) {
       setErrors((prevErrors) => ({ ...prevErrors, email: 'Invalid email address' }));
-    } 
+    }
     // Clear error if valid
     else {
       setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
@@ -36,51 +44,77 @@ function Contact() {
   return (
     <section>
       <h2 className='contact-header'>Contact</h2>
-      <form>
-        <label className='contact-name'>
-          Name:
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-          {/* Conditionally show the error */}
-          {errors.name && <span style={{ color: 'red' }}>{errors.name}</span>}
-        </label>
-        <br />
+      <Row className="justify-content-center">
+        <Col md={6}>
+          <Form>
+            <Row className="align-items-center">
+              <Col xs="auto">
+                <img src={user} alt="User icon" style={{ width: '20px', marginBottom: '20px', marginRight: '-20px' }} />
+              </Col>
+              <Col>
+                <Form.Group controlId="formName">
+                  <Form.Control
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="mb-3"
+                  />
+                  {errors.name && <span style={{ color: 'red' }}>{errors.name}</span>}
+                </Form.Group>
+              </Col>
+            </Row>
 
-        <label className='contact-email'>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-          {/* Conditionally show the error */}
-          {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}
-        </label>
-        <br />
+            <Row className="align-items-center">
+              <Col xs="auto">
+                <img src={email} alt="User icon" style={{ width: '20px', marginBottom: '20px', marginRight: '-20px' }} />
+              </Col>
+              <Col>
+                <Form.Group controlId="formEmail">
+                  <Form.Control
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="mb-3"
+                  />
+                  {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}
+                </Form.Group>
+              </Col>
+            </Row>
 
-        <label className='contact-message'>
-          Message:
-          <textarea
-            className='message-input'
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-          {/* Conditionally show the error */}
-          {errors.message && <span style={{ color: 'red' }}>{errors.message}</span>}
-        </label>
-        <br />
+            <Row className="align-items-center">
+              <Col xs="auto">
+                <img src={message} alt="Message Icon" style={{ width: '40px', marginBottom: '20px', marginRight: '-20px' }} />
+              </Col>
+              <Col>
+            <Form.Group controlId="formMessage">
+              <Form.Control
+                as="textarea"
+                rows={4}
+                placeholder="Message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                className="mb-3 message-input"
+              />
+              {errors.message && <span style={{ color: 'red' }}>{errors.message}</span>}
+            </Form.Group>
+            </Col>
+            </Row>
 
-        <button type="submit">Submit</button>
-      </form>
+
+            <Button variant="secondary" type="submit">
+              Submit
+            </Button>
+          </Form>
+        </Col>
+      </Row>
     </section>
   );
 }

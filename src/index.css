@@ -238,6 +238,10 @@ li {
   background-repeat: no-repeat;
 }
 
+.portfolio-section {
+  padding-top: 50px;
+}
+
 .language-icon {
   transition: 1s ease;
   width: 25px;
@@ -295,5 +299,9 @@ li {
   .nav-links li {
     margin: 10px 0;
     text-align: center;
+  }
+  
+  .follow{
+    font-size: 15px;
   }
 }

@@ -1,7 +1,5 @@
 import React from 'react';
 import Project from './Project';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import cheat from '../images/cheat.gif';
 import readme from '../images/readme.gif';
 import vehiclebuilder from '../images/vehiclebuilder.gif';
@@ -54,18 +52,17 @@ function Portfolio() {
   return (
     <section>
       <h2 className="text-center mb-4">Portfolio</h2>
-      <Row className="justify-content-center mx-4">
+      <div className='card-wrapper'>
         {projects.map((project, index) => (
-          <Col key={index} md={4}>
             <Project
               title={project.title}
               image={project.image}
               deployedLink={project.deployedLink}
               repoLink={project.repoLink}
             />
-          </Col>
+
         ))}
-      </Row>
+      </div>
     </section>
   );
 }

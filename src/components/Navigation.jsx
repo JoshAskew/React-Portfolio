@@ -9,7 +9,7 @@ function Navigation({ activeSection, setActiveSection }) {
   return (
     <nav>
       <button className="menu-toggle" onClick={toggleMenu}>
-        &#9776; {/* This is the hamburger icon */}
+        &#9776;
       </button>
       <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <li className={activeSection === 'AboutMe' ? 'active' : ''}>

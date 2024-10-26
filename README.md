@@ -42,7 +42,7 @@ This single-page portfolio highlights my projects, provides a brief professional
 This application is accessible in two ways:
 
 1. **Locally**: Clone the repository, install the necessary dependencies, and run the application from the command line.
-2. **Deployed Version**: Visit the live version of the application at 'future link'.
+2. **Deployed Version**: Visit the live version of the application at ['Portfolio'](https://josh-askew-portfolio.netlify.app/portfolio).
 
 ## Contribution
 

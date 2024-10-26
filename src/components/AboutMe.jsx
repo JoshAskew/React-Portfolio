@@ -4,9 +4,7 @@ import profile from '../images/mepic.jpeg'
 function AboutMe() {
   return (
     <section>
-      <div className='am-h2-container'>
-        <h2 className="am-h2">About Me</h2>
-      </div>
+        <h2 className="aboutme-header">About Me</h2>
       <div className='prof-pic-container'>
         <img src={profile} alt="Developer" className='propic' />
       </div>

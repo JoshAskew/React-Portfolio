@@ -46,7 +46,8 @@ function Contact() {
       <h2 className='contact-header'>Contact</h2>
       <Row className="justify-content-center">
         <Col md={6}>
-          <Form>
+        <div className='form-container'>
+          <Form className='form'>
             <Row className="align-items-center">
               <Col xs="auto">
                 <img src={user} alt="User icon" style={{ width: '20px', marginBottom: '20px', marginRight: '-20px' }} />
@@ -60,7 +61,7 @@ function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    className="mb-3"
+                    className="mb-3 info-input"
                   />
                   {errors.name && <span style={{ color: 'red' }}>{errors.name}</span>}
                 </Form.Group>
@@ -80,7 +81,7 @@ function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    className="mb-3"
+                    className="mb-3 info-input"
                   />
                   {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}
                 </Form.Group>
@@ -113,6 +114,7 @@ function Contact() {
               Submit
             </Button>
           </Form>
+          </div>
         </Col>
       </Row>
     </section>

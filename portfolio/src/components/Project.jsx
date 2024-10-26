@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 function Project({ title, image, deployedLink, repoLink }) {
   return (
-    <Card style={{ width: '26rem', maxHeight: '50px;' }} className="mb-4">
+    <Card style={{ width: '26rem' }} className="mb-4 hover-zoom">
         <Card.Title>{title}</Card.Title>
       <Card.Img variant="top" src={image} alt={title} />
       <Card.Body>

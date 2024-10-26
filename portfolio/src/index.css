@@ -135,10 +135,6 @@ body {
     padding: 20px;
   }
 
-  .contact-header {
-    text-align: center;
-  }
-
   #nav-links {
     padding: 30px;
   }
@@ -149,19 +145,18 @@ body {
   }
 
   .message-input {
-    width: 400px;
+    max-width: 540px;
     height: 170px;
   }
 
-  input.mr-sm-2.form-control {
-    width: 20%;
+  .info-input {
+    max-width: 500px;
   }
 
-  .portfolio-header {
-    text-align: center;
-  }
-
-  div.card-body {
+  .portfolio-header,
+   div.card-body,
+  .contact-header,
+  .resume-header{
     text-align: center;
   }
 
@@ -169,11 +164,35 @@ body {
     height: 270px;
   }
 
-
   .prof-h5 {
     text-decoration: underline;
   }
 
   li {
     list-style-type: circle;
+  }
+
+  .hover-zoom:hover {
+    transform: scale(1.1);
+  }
+
+  .download-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+  }
+  
+  .download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--grey9);
+    color: var(--grey2); 
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .download:hover {
+    transform: scale(1.1);
   }

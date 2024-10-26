@@ -1,11 +1,14 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import resume from '../pdfs/Resume.pdf'
 
 function Resume() {
   return (
     <section>
       <h2 className='resume-header'>Resume</h2>
-      <a href="https://docs.google.com/document/d/14s2cUop3L5g-py8BYRwTCmaHQApOyHOXYMxclbPxWZ0/edit?usp=sharing" download>Download Resume</a>
+      <div className='download-container'>
+      <a href= {resume} download className='download'>Download Resume</a>
+      </div>
       <h3>Proficiencies</h3>
 
       <Card style={{ width: '26rem', maxHeight: '50px;' }} className="mb-4">

@@ -6,6 +6,9 @@ import cheat from '../images/cheat.gif';
 import readme from '../images/readme.gif';
 import vehiclebuilder from '../images/vehiclebuilder.gif';
 import tracker from '../images/tracker.jpg';
+import swatter from '../images/swatter.gif';
+import tune from '../images/tune.gif';
+
 
 
 const projects = [
@@ -33,13 +36,25 @@ const projects = [
     deployedLink: '',
     repoLink: 'https://github.com/JoshAskew/Employee-Tracker',
   },
+  {
+    title: 'TuneForge',
+    image: tune,
+    deployedLink: 'https://yahye-mohamed101.github.io/TuneForge/',
+    repoLink: 'https://github.com/yahye-mohamed101/TuneForge',
+  },
+  {
+    title: 'Flyswatter Game',
+    image: swatter,
+    deployedLink: 'https://joshaskew.github.io/Fly-Swatter-Game/',
+    repoLink: 'https://github.com/JoshAskew/Fly-Swatter-Game',
+  },
 ];
 
 function Portfolio() {
   return (
     <section>
-      <h2 className="portfolio-header text-center mb-4">Portfolio</h2>
-      <Row className="justify-content-center">
+      <h2 className="text-center mb-4">Portfolio</h2>
+      <Row className="justify-content-center mx-4">
         {projects.map((project, index) => (
           <Col key={index} md={4}>
             <Project

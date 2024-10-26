@@ -11,6 +11,22 @@
 
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 33px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -21,36 +37,31 @@ body {
   header {
     padding: 20px;
     background-color: var(--grey8);
-    color: var(--grey1);
+    color: var(--grey4);
     text-align: center;
 
   }
 
-  
   main {
     padding: 20px;
     padding-bottom: 150px;
   }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
+
+  nav {
+    display: flex;
+    justify-content: center;
   }
   
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
+  nav li {
+    list-style-type: none;
+
   }
   
   nav ul li a {
     text-decoration: none;
     color: var(--grey4);
     font-size: 20px;
-  }
-  
-  
-  footer a {
-    color: var(--grey1);
+    margin: 0 30px;
   }
   
   footer {
@@ -60,13 +71,14 @@ body {
     text-align: center;
     padding: 40px;
     background-color: var(--grey8);
-    color: var(--grey1);
+    color: var(--grey4);
   }
   
   .footer-child {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -15px;
   }
   
   .social-icon {
@@ -83,6 +95,14 @@ body {
     padding-top: 15px;
     padding-right: 20px;
     font-size: 20px;
+  }
+
+  .copyright {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    font-size: 0.9rem;
+    margin: 0;
   }
   
   .am-h2-container {
@@ -169,11 +189,11 @@ body {
   }
 
   li {
-    list-style-type: circle;
+    list-style-type: none;
   }
 
   .hover-zoom:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
   }
 
   .download-container {
@@ -196,3 +216,80 @@ body {
   .download:hover {
     transform: scale(1.1);
   }
+
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin: 50px;
+  }
+  
+  .card-wrapper .card {
+    min-width: 250px;
+    flex-grow: 1;
+    border: 2px solid var(--grey8);
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .language-icon {
+    transition: 1s ease;
+    width: 25px;
+  }
+  
+  .language-icon:hover {
+    transform: scale(2);
+  }
+  
+  .proficiencies {
+    padding: 20px;
+  }
+  
+  .proficiencies li {
+    margin: 15px;
+  }
+  
+  .proficiencies-header {
+    text-align: center;
+  }
+  
+  .prof-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .prof-card {
+    justify-content: center;
+  }
+
+/* MEDIA QUERIES */
+
+  @media (max-width: 768px) {
+    .menu-toggle {
+      color: var(--grey5);
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-top: 1px solid #ccc;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+

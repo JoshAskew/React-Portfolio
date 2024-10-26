@@ -12,6 +12,7 @@ function Footer() {
       <a href="https://linkedin.com" target="_blank"><img src={linkedin} alt="LinkedIn icon" className="social-icon"/></a>
       <a href="https://stackoverflow.com" target="_blank"><img src={stackoverflow} alt="StackOverflow icon" className="social-icon"/></a>
       </div>
+      <p className='copyright'>© {new Date().getFullYear()} Josh Askew. All rights reserved.</p>
     </footer>
   );
 }

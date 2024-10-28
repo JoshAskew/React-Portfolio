@@ -5,7 +5,7 @@ import css from '../images/css.png';
 import html from '../images/html.png';
 import JavaScript from '../images/JavaScript.png';
 import react from '../images/react.png';
-import typescript from '../images/typescript.png';
+import typescript from '../images/typescript1.png';
 import bootsrtrap from '../images/bootstrap.png';
 import restful from '../images/restful.png';
 import node from '../images/node.png';
@@ -58,7 +58,7 @@ function Resume() {
         <li><img src={SQL} alt="SQL icon"  className="language-icon"/>SQL Databases</li>
         <li><img src={express} alt="ExpressJS icon"  className="language-icon"/>ExpressJs</li>
         <li><img src={npm} alt="NPM icon"  className="language-icon"/>NPM</li>
-        <li><img src={json} alt="GIT icon"  className="language-icon"/>JSON</li>
+        <li><img src={json} alt="JSON icon"  className="language-icon"/>JSON</li>
         <li><img src={restful} alt="RESTFUL API icon"  className="language-icon"/>RESTful APIs</li>
         <li><img src={node} alt="NodeJS icon"  className="language-icon"/>NodeJS</li>
         <li><img src={insomnia} alt="Insomnia icon"  className="language-icon"/>Insomnia</li>

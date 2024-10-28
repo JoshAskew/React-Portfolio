@@ -55,6 +55,7 @@ function Portfolio() {
       <div className='card-wrapper'>
         {projects.map((project, index) => (
             <Project
+              key={project.title}
               title={project.title}
               image={project.image}
               deployedLink={project.deployedLink}

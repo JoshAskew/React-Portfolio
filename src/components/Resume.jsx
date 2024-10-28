@@ -6,7 +6,7 @@ import html from '../images/html.png';
 import JavaScript from '../images/JavaScript.png';
 import react from '../images/react.png';
 import typescript from '../images/typescript1.png';
-import bootsrtrap from '../images/bootstrap.png';
+import bootsrtrap from '../images/bootstrap1.png';
 import restful from '../images/restful.png';
 import node from '../images/node.png';
 import postgres from '../images/postgres.png';

@@ -17,7 +17,7 @@ import vs from '../images/vs.png';
 import git from '../images/git.png';
 import vite from '../images/vite1.png';
 import json from '../images/JSON.png';
-import npm from '../images/npm.png';
+import npm from '../images/npm1.png';
 
 function Resume() {
   return (

@@ -32,25 +32,24 @@ body {
   font-optical-sizing: auto;
   margin: 0;
   padding: 0;
-  background-color: var(--grey1);
+  background-image: url('images/bodybackground.png');
+  background-size: cover
+  ;
 }
 
 header {
   padding: 20px;
   background-image: url('images/header.png');
   background-size: cover;
- 
   background-repeat: no-repeat;
   color: var(--grey4);
   text-align: center;
 }
 
 main {
+  box-sizing: border-box;
   padding: 20px;
   padding-bottom: 150px;
-  background-image: url('images/bodybackground.png');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 nav {
@@ -75,7 +74,7 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding: 40px;
+  padding: 30px;
   background-image: url('images/header.png');
   background-size: cover;
   background-position: center;
@@ -147,6 +146,11 @@ footer {
 form {
   text-align: center;
   padding: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
 }
 
 .contact-name,

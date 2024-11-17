@@ -276,6 +276,10 @@ li {
   justify-content: center;
 }
 
+.notice {
+  text-align: center;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import resume from '../pdfs/Resume.pdf'
+import resume from '../pdfs/Josh_Askew_Resume.pdf'
 import css from '../images/css.png';
 import html from '../images/html.png';
 import JavaScript from '../images/JavaScript.png';

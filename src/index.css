@@ -94,6 +94,13 @@ footer {
   margin-right: 35px;
 }
 
+.facebook {
+  transition: 0.3s ease;
+  height: 72px;
+  width: 72px;
+  margin-left: -10px;
+}
+
 .social-icon:hover {
   transform: scale(1.3);
 }
